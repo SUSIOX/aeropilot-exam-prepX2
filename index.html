@@ -97,31 +97,6 @@
             margin-top: 2px;
         }
         
-        .status-badge {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: rgba(46, 204, 113, 0.2);
-            border: 1px solid rgba(46, 204, 113, 0.4);
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: #2ecc71;
-            font-weight: 600;
-        }
-        
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: #2ecc71;
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
         
         /* Main container */
         .container {
@@ -145,23 +120,21 @@
             box-shadow: 0 1px 6px rgba(0,0,0,.08);
         }
         
-        /* Stats bar - compact single row */
+        /* Stats bar in header - compact */
         .stats-bar {
             display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-bottom: 1rem;
+            gap: 6px;
             flex-wrap: nowrap;
         }
         
         .stat-card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            padding: 8px 12px;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(4px);
+            border-radius: 6px;
+            padding: 6px 10px;
             text-align: center;
-            box-shadow: var(--shadow);
-            border-left: 3px solid var(--accent);
-            min-width: 70px;
+            border-left: 2px solid rgba(255,255,255,0.3);
+            min-width: 55px;
             flex: 0 0 auto;
         }
         
@@ -169,9 +142,9 @@
         .stat-card.wrong { border-left-color: var(--wrong); }
         
         .stat-value {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 700;
-            color: var(--accent);
+            color: #fff;
             line-height: 1;
         }
         
@@ -179,8 +152,8 @@
         .stat-card.wrong .stat-value { color: var(--wrong); }
         
         .stat-label {
-            font-size: 0.65rem;
-            color: var(--text-muted);
+            font-size: 0.6rem;
+            color: rgba(255,255,255,0.7);
             margin-top: 2px;
             text-transform: uppercase;
             letter-spacing: 0.3px;
@@ -491,29 +464,24 @@
                     <p>Procvičování otázek na pilotní průkaz</p>
                 </div>
             </div>
-            <div class="status-badge">
-                <span class="status-dot"></span>
-                <span>Online</span>
+            <div class="stats-bar" id="stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-count">0</div>
+                    <div class="stat-label">Celkem</div>
+                </div>
+                <div class="stat-card correct">
+                    <div class="stat-value" id="correct-count">0</div>
+                    <div class="stat-label">Správně</div>
+                </div>
+                <div class="stat-card wrong">
+                    <div class="stat-value" id="wrong-count">0</div>
+                    <div class="stat-label">Špatně</div>
+                </div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="stats-bar" id="stats">
-            <div class="stat-card">
-                <div class="stat-value" id="total-count">0</div>
-                <div class="stat-label">Celkem</div>
-            </div>
-            <div class="stat-card correct">
-                <div class="stat-value" id="correct-count">0</div>
-                <div class="stat-label">Správně</div>
-            </div>
-            <div class="stat-card wrong">
-                <div class="stat-value" id="wrong-count">0</div>
-                <div class="stat-label">Špatně</div>
-            </div>
-        </div>
-
         <div class="filters-container" id="filters"></div>
 
         <div id="quiz-content">
