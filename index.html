@@ -64,6 +64,29 @@
             flex-wrap: wrap;
         }
         
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .btn-reset-header {
+            padding: 8px 10px;
+            border: 1px solid rgba(231, 76, 60, 0.4);
+            background: rgba(231, 76, 60, 0.15);
+            color: var(--wrong);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+        
+        .btn-reset-header:hover {
+            background: var(--wrong);
+            color: white;
+        }
+        
         .logo {
             display: flex;
             align-items: center;
@@ -163,21 +186,32 @@
         .filters-row {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             gap: 12px;
             margin-bottom: 1.5rem;
             flex-wrap: wrap;
         }
         
-        .filters-container {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
+        .category-select {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            background: white;
+            color: var(--text);
+            cursor: pointer;
+            min-width: 200px;
             flex: 1;
+            max-width: 300px;
+        }
+        
+        .category-select:focus {
+            outline: none;
+            border-color: var(--accent);
         }
         
         .btn-reset {
-            padding: 7px 14px;
+            padding: 8px 16px;
             border: 1px solid var(--wrong);
             background: rgba(231, 76, 60, 0.08);
             color: var(--wrong);
@@ -495,27 +529,31 @@
                     <p>Procvičování otázek na pilotní průkaz</p>
                 </div>
             </div>
-            <div class="stats-bar" id="stats">
-                <div class="stat-card">
-                    <div class="stat-value" id="total-count">0</div>
-                    <div class="stat-label">Celkem</div>
+            <div class="header-right">
+                <div class="stats-bar" id="stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-count">0</div>
+                        <div class="stat-label">Celkem</div>
+                    </div>
+                    <div class="stat-card correct">
+                        <div class="stat-value" id="correct-count">0</div>
+                        <div class="stat-label">Správně</div>
+                    </div>
+                    <div class="stat-card wrong">
+                        <div class="stat-value" id="wrong-count">0</div>
+                        <div class="stat-label">Špatně</div>
+                    </div>
                 </div>
-                <div class="stat-card correct">
-                    <div class="stat-value" id="correct-count">0</div>
-                    <div class="stat-label">Správně</div>
-                </div>
-                <div class="stat-card wrong">
-                    <div class="stat-value" id="wrong-count">0</div>
-                    <div class="stat-label">Špatně</div>
-                </div>
+                <button class="btn-reset-header" onclick="resetQuiz()" title="Vymazat postup a začít znovu">🗑️</button>
             </div>
         </div>
     </header>
 
     <div class="container">
         <div class="filters-row">
-            <div class="filters-container" id="filters"></div>
-            <button class="btn-reset" onclick="resetQuiz()" title="Vymazat postup a začít znovu">🗑️ Reset</button>
+            <select class="category-select" id="category-select" onchange="filterCategory(this.value)">
+                <option value="all">Všechny kategorie</option>
+            </select>
         </div>
 
         <div id="quiz-content">
@@ -574,14 +612,18 @@
 
         function createFilters() {
             const categories = [...new Set(allQuestions.map(q => q.category))];
-            const filtersDiv = document.getElementById('filters');
+            const select = document.getElementById('category-select');
             
-            filtersDiv.innerHTML = `
-                <button class="filter-btn active" onclick="filterCategory('all')">Vše</button>
+            // Keep the "all" option, add categories
+            select.innerHTML = `
+                <option value="all">Všechny kategorie</option>
                 ${categories.map(cat => 
-                    `<button class="filter-btn" onclick="filterCategory('${cat}')">${cat.split(' SPL')[0]}</button>`
+                    `<option value="${cat}">${cat.split(' SPL')[0]}</option>`
                 ).join('')}
             `;
+            
+            // Set current selection
+            select.value = currentCategory;
         }
 
         function filterCategory(category) {
@@ -595,12 +637,8 @@
             wrongCount = 0;
             answered = false;
             
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.classList.toggle('active', 
-                    (category === 'all' && btn.textContent === 'Vše') || 
-                    btn.textContent === category.split(' SPL')[0]
-                );
-            });
+            // Update select value
+            document.getElementById('category-select').value = category;
             
             updateStats();
             saveQuizState();
@@ -665,10 +703,8 @@
             currentQuestions = [...allQuestions];
             shuffleArray(currentQuestions);
             
-            // Update UI
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.textContent === 'Vše');
-            });
+            // Update select
+            document.getElementById('category-select').value = 'all';
             
             updateStats();
             showQuestion();
