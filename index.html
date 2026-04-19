@@ -611,7 +611,15 @@
         }
 
         function selectOption(label) {
-            if (answered) return;
+            const q = currentQuestions[currentIndex];
+            
+            // If already answered, clicking correct answer goes to next question
+            if (answered) {
+                if (q.correct_labels.includes(label)) {
+                    nextQuestion();
+                }
+                return;
+            }
             
             // Don't trigger if user is selecting text
             const selection = window.getSelection();
@@ -621,7 +629,6 @@
             
             answered = true;
 
-            const q = currentQuestions[currentIndex];
             const isCorrect = q.correct_labels.includes(label);
 
             if (isCorrect) correctCount++;
@@ -641,11 +648,16 @@
                 
                 if (q.correct_labels.includes(optLabel)) {
                     opt.classList.add('correct');
+                    // Keep click handler on correct answer to go to next
+                    opt.style.cursor = 'pointer';
                 } else if (optLabel === label && !isCorrect) {
                     opt.classList.add('wrong');
+                    opt.onclick = null;
+                    opt.style.cursor = 'default';
+                } else {
+                    opt.onclick = null;
+                    opt.style.cursor = 'default';
                 }
-                opt.onclick = null;
-                opt.style.cursor = 'default';
             });
 
             const resultDiv = document.getElementById('result');
