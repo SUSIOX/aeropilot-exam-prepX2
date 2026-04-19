@@ -36,6 +36,16 @@
             min-height: 100vh;
             line-height: 1.5;
         }
+        
+        /* Copy-friendly text selection */
+        ::selection {
+            background: rgba(15, 52, 96, 0.2);
+            color: var(--text);
+        }
+        
+        .question, .option-text {
+            cursor: text;
+        }
         /* Header - Gradient style */
         header {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
@@ -267,7 +277,6 @@
             border-radius: 8px;
             cursor: pointer;
             transition: border-color 0.15s, background 0.15s;
-            user-select: none;
             font-size: 0.92rem;
             line-height: 1.45;
             background: white;
@@ -418,6 +427,17 @@
             margin-top: 40px;
         }
         
+        .copy-hint {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--badge-bg);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-bottom: 8px;
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             header {
@@ -497,7 +517,8 @@
     </div>
     
     <footer>
-        AeroPilot SPL Prep &copy; 2026 • Splň standardy EASA • Česká republika
+        <div class="copy-hint">💡 Označ text myší pro kopírování</div>
+        <div>AeroPilot SPL Prep &copy; 2026 • Splň standardy EASA • Česká republika</div>
     </footer>
 
     <script>
@@ -618,6 +639,13 @@
 
         function selectOption(label) {
             if (answered) return;
+            
+            // Don't trigger if user is selecting text
+            const selection = window.getSelection();
+            if (selection && selection.toString().trim().length > 0) {
+                return;
+            }
+            
             answered = true;
 
             const q = currentQuestions[currentIndex];
