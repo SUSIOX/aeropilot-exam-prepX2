@@ -3,245 +3,495 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPL Test - Procvičování otázek</title>
+    <title>AeroPilot SPL Prep</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff6b35'/%3E%3Cstop offset='100%25' style='stop-color:%23ff8c42'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' fill='%231a1a1a'/%3E%3Cpath d='M20 50 L30 40 L30 45 L50 45 L50 35 L55 35 L55 45 L75 45 L75 40 L85 50 L75 60 L75 55 L55 55 L55 65 L50 65 L50 55 L30 55 L30 60 Z' fill='url(%23a)'/%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23ff6b35' stroke-width='2' opacity='0.3'/%3E%3C/svg%3E" />
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
+        :root {
+            --bg: #0f0f0f;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.6);
+            --border: rgba(255, 255, 255, 0.1);
+            --accent: #ff6b35;
+            --accent-hover: #ff8c42;
+            --correct: #22c55e;
+            --wrong: #ef4444;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
             min-height: 100vh;
-            padding: 20px;
+            line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+        
+        /* Background with aviation image */
+        .bg-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
         }
+        
+        .bg-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at top, rgba(255, 107, 53, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                linear-gradient(to bottom, rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.95));
+        }
+        
+        .bg-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        /* Header */
         header {
-            text-align: center;
-            color: white;
-            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
         }
-        header h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            opacity: 0.9;
-        }
-        .stats {
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
+            font-weight: 700;
+            font-size: 1.2rem;
         }
-        .stat-box {
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+        
+        .logo-text h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
         }
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 25px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        
+        .logo-text p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
         }
-        .category-badge {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 5px 15px;
+        
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
             border-radius: 20px;
             font-size: 0.8rem;
-            margin-bottom: 15px;
+            color: #22c55e;
+        }
+        
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background: #22c55e;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        /* Main container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        /* Stats bar */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+        /* Filters */
+        .filters-container {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        
+        .filter-btn {
+            padding: 0.6rem 1.2rem;
+            border: 1px solid transparent;
+            background: transparent;
+            color: var(--text-muted);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover {
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .filter-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+        
+        /* Question card */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .category-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 107, 53, 0.1);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1.25rem;
+            border: 1px solid rgba(255, 107, 53, 0.2);
+        }
+        
+        .category-badge::before {
+            content: '●';
+            font-size: 0.5rem;
         }
         .question {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 20px;
-            line-height: 1.5;
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
         }
+        
         .options {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 0.75rem;
         }
+        
         .option {
             display: flex;
             align-items: center;
-            padding: 15px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            border: 1px solid var(--border);
+            border-radius: 10px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
+            background: rgba(255, 255, 255, 0.02);
         }
+        
         .option:hover {
-            border-color: #667eea;
-            background: #f8f9ff;
+            border-color: rgba(255, 107, 53, 0.5);
+            background: rgba(255, 107, 53, 0.05);
         }
+        
         .option.selected {
-            border-color: #667eea;
-            background: #f0f3ff;
+            border-color: var(--accent);
+            background: rgba(255, 107, 53, 0.1);
         }
+        
         .option.correct {
-            border-color: #4caf50;
-            background: #e8f5e9;
+            border-color: var(--correct);
+            background: rgba(34, 197, 94, 0.1);
         }
+        
         .option.wrong {
-            border-color: #f44336;
-            background: #ffebee;
+            border-color: var(--wrong);
+            background: rgba(239, 68, 68, 0.1);
         }
+        
         .option-label {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 32px;
-            height: 32px;
-            background: #667eea;
-            color: white;
-            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            border-radius: 6px;
             font-weight: 600;
-            margin-right: 15px;
+            font-size: 0.9rem;
+            margin-right: 1rem;
             flex-shrink: 0;
+            transition: all 0.2s ease;
         }
+        
+        .option:hover .option-label {
+            background: rgba(255, 107, 53, 0.2);
+            color: var(--accent);
+        }
+        
         .option.correct .option-label {
-            background: #4caf50;
+            background: var(--correct);
+            color: white;
         }
+        
         .option.wrong .option-label {
-            background: #f44336;
+            background: var(--wrong);
+            color: white;
         }
+        
         .option-text {
             flex: 1;
-            font-size: 1rem;
-            color: #444;
+            font-size: 0.95rem;
+            color: var(--text);
         }
+        /* Result */
         .result {
-            margin-top: 20px;
-            padding: 15px;
+            margin-top: 1.5rem;
+            padding: 1rem 1.25rem;
             border-radius: 10px;
             display: none;
+            font-weight: 500;
         }
+        
         .result.show {
             display: block;
         }
+        
         .result.correct {
-            background: #e8f5e9;
-            color: #2e7d32;
+            background: rgba(34, 197, 94, 0.1);
+            color: #4ade80;
+            border: 1px solid rgba(34, 197, 94, 0.3);
         }
+        
         .result.wrong {
-            background: #ffebee;
-            color: #c62828;
+            background: rgba(239, 68, 68, 0.1);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.3);
         }
+        
+        /* Controls */
         .controls {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 25px;
-            flex-wrap: wrap;
-            gap: 10px;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
         }
+        
         .btn {
-            padding: 12px 30px;
-            border: none;
-            border-radius: 25px;
-            font-size: 1rem;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.9rem;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             font-weight: 500;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text);
         }
+        
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
         .btn-primary {
-            background: #667eea;
+            background: var(--accent);
+            border-color: var(--accent);
             color: white;
         }
+        
         .btn-primary:hover {
-            background: #5568d3;
-            transform: translateY(-2px);
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+            transform: translateY(-1px);
         }
-        .btn-secondary {
-            background: #e0e0e0;
-            color: #666;
-        }
-        .btn-secondary:hover {
-            background: #d0d0d0;
-        }
+        
         .progress {
             text-align: center;
-            color: #666;
+            color: var(--text-muted);
             font-size: 0.9rem;
         }
-        .filters {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .filter-btn {
-            padding: 8px 16px;
-            border: 2px solid rgba(255,255,255,0.3);
-            background: rgba(255,255,255,0.1);
-            color: white;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 0.85rem;
-        }
-        .filter-btn:hover, .filter-btn.active {
-            background: white;
-            color: #667eea;
-        }
+        
+        /* Loading & Error */
         .loading {
             text-align: center;
-            color: white;
-            padding: 40px;
-            font-size: 1.2rem;
-        }
-        .error {
-            text-align: center;
-            color: #ff6b6b;
-            padding: 40px;
+            color: var(--text-muted);
+            padding: 4rem;
             font-size: 1.1rem;
         }
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.5rem;
+        
+        .error {
+            text-align: center;
+            color: var(--wrong);
+            padding: 4rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                padding: 0.75rem 1rem;
             }
+            
+            .logo-text h1 {
+                font-size: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .card {
+                padding: 1.25rem;
+            }
+            
             .question {
                 font-size: 1rem;
             }
-            .card {
-                padding: 20px;
+            
+            .controls {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .controls .btn {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🛫 SPL Test</h1>
-            <p>Procvičování otázek na pilotní průkaz</p>
-        </header>
+    <div class="bg-container">
+        <div class="bg-grid"></div>
+    </div>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">A</div>
+                <div class="logo-text">
+                    <h1>AeroPilot SPL Prep</h1>
+                    <p>Procvičování otázek na pilotní průkaz</p>
+                </div>
+            </div>
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </div>
+    </header>
 
-        <div class="stats" id="stats">
-            <div class="stat-box">Celkem: <span id="total-count">0</span></div>
-            <div class="stat-box">Správně: <span id="correct-count">0</span></div>
-            <div class="stat-box">Špatně: <span id="wrong-count">0</span></div>
+    <div class="container">
+        <div class="stats-bar" id="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="total-count">0</div>
+                <div class="stat-label">Celkem otázek</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="correct-count" style="color: var(--correct)">0</div>
+                <div class="stat-label">Správně</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="wrong-count" style="color: var(--wrong)">0</div>
+                <div class="stat-label">Špatně</div>
+            </div>
         </div>
 
-        <div class="filters" id="filters"></div>
+        <div class="filters-container" id="filters"></div>
 
         <div id="quiz-content">
             <div class="loading">Načítání otázek...</div>
         </div>
     </div>
+    
+    <footer>
+        AeroPilot SPL Prep &copy; 2026 • Splň standardy EASA • Česká republika
+    </footer>
 
     <script>
         let allQuestions = [];
@@ -310,9 +560,13 @@
         }
 
         function updateStats() {
-            document.getElementById('total-count').textContent = currentQuestions.length;
-            document.getElementById('correct-count').textContent = correctCount;
-            document.getElementById('wrong-count').textContent = wrongCount;
+            const totalEl = document.getElementById('total-count');
+            const correctEl = document.getElementById('correct-count');
+            const wrongEl = document.getElementById('wrong-count');
+            
+            if (totalEl) totalEl.textContent = currentQuestions.length;
+            if (correctEl) correctEl.textContent = correctCount;
+            if (wrongEl) wrongEl.textContent = wrongCount;
         }
 
         function showQuestion() {
