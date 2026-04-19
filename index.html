@@ -160,11 +160,42 @@
             white-space: nowrap;
         }
         /* Filters */
+        .filters-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
         .filters-container {
             display: flex;
             gap: 8px;
-            margin-bottom: 1.5rem;
             flex-wrap: wrap;
+            flex: 1;
+        }
+        
+        .btn-reset {
+            padding: 7px 14px;
+            border: 1px solid var(--wrong);
+            background: rgba(231, 76, 60, 0.08);
+            color: var(--wrong);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+        
+        .btn-reset:hover {
+            background: var(--wrong);
+            color: white;
+        }
+        
+        .btn-reset:active {
+            transform: scale(0.97);
         }
         
         .filter-btn {
@@ -482,7 +513,10 @@
     </header>
 
     <div class="container">
-        <div class="filters-container" id="filters"></div>
+        <div class="filters-row">
+            <div class="filters-container" id="filters"></div>
+            <button class="btn-reset" onclick="resetQuiz()" title="Vymazat postup a začít znovu">🗑️ Reset</button>
+        </div>
 
         <div id="quiz-content">
             <div class="loading">Načítání otázek...</div>
@@ -508,8 +542,27 @@
                 const response = await fetch('questions.json');
                 if (!response.ok) throw new Error('Nepodařilo se načíst otázky');
                 allQuestions = await response.json();
-                currentQuestions = [...allQuestions];
+                
+                // Try to load saved state
+                const saved = loadQuizState();
+                if (saved) {
+                    currentCategory = saved.currentCategory;
+                    correctCount = saved.correctCount;
+                    wrongCount = saved.wrongCount;
+                    // Will set currentIndex after filtering
+                }
+                
+                // Apply saved filter or default to all
+                currentQuestions = currentCategory === 'all' 
+                    ? [...allQuestions] 
+                    : allQuestions.filter(q => q.category === currentCategory);
                 shuffleArray(currentQuestions);
+                
+                // Restore index after shuffle (approximate position)
+                if (saved && saved.currentIndex < currentQuestions.length) {
+                    currentIndex = saved.currentIndex;
+                }
+                
                 createFilters();
                 updateStats();
                 showQuestion();
@@ -550,6 +603,7 @@
             });
             
             updateStats();
+            saveQuizState();
             showQuestion();
         }
 
@@ -568,6 +622,56 @@
             if (totalEl) totalEl.textContent = currentQuestions.length;
             if (correctEl) correctEl.textContent = correctCount;
             if (wrongEl) wrongEl.textContent = wrongCount;
+        }
+
+        // Save/load quiz state
+        function saveQuizState() {
+            const state = {
+                currentIndex,
+                currentCategory,
+                correctCount,
+                wrongCount,
+                timestamp: Date.now()
+            };
+            localStorage.setItem('splQuizState', JSON.stringify(state));
+        }
+
+        function loadQuizState() {
+            const saved = localStorage.getItem('splQuizState');
+            if (!saved) return null;
+            
+            const state = JSON.parse(saved);
+            // Clear old data (older than 7 days)
+            const MAX_AGE_DAYS = 7;
+            const age = (Date.now() - state.timestamp) / (1000 * 60 * 60 * 24);
+            if (age > MAX_AGE_DAYS) {
+                localStorage.removeItem('splQuizState');
+                return null;
+            }
+            return state;
+        }
+
+        function resetQuiz() {
+            if (!confirm('Opravdu chcete vymazat postup a začít znovu?')) return;
+            
+            localStorage.removeItem('splQuizState');
+            currentIndex = 0;
+            correctCount = 0;
+            wrongCount = 0;
+            currentCategory = 'all';
+            answered = false;
+            
+            // Reload questions
+            currentQuestions = [...allQuestions];
+            shuffleArray(currentQuestions);
+            
+            // Update UI
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent === 'Vše');
+            });
+            
+            updateStats();
+            showQuestion();
         }
 
         function showQuestion() {
@@ -634,6 +738,7 @@
             if (isCorrect) correctCount++;
             else wrongCount++;
             updateStats();
+            saveQuizState();
 
             // Add border color to card
             const card = document.getElementById('current-card');
@@ -670,6 +775,7 @@
         function nextQuestion() {
             if (currentIndex < currentQuestions.length - 1) {
                 currentIndex++;
+                saveQuizState();
                 showQuestion();
             }
         }
