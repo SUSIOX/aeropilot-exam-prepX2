@@ -22,6 +22,10 @@ Webová aplikace pro procvičování otázek na pilotní průkaz SPL (Sportovní
 - Všeobecné znalosti letadel
 - Základy letu
 
+## Live demo
+
+🌐 **https://susiox.github.io/aeropilot-exam-prepX2/**
+
 ## Nasazení na GitHub Pages
 
 1. Vytvořte nový repozitář na GitHubu
