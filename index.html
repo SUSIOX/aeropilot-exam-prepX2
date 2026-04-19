@@ -145,41 +145,46 @@
             box-shadow: 0 1px 6px rgba(0,0,0,.08);
         }
         
-        /* Stats bar */
+        /* Stats bar - compact single row */
         .stats-bar {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 1rem;
+            flex-wrap: nowrap;
         }
         
         .stat-card {
             background: var(--card-bg);
-            border-radius: 12px;
-            padding: 16px;
+            border-radius: 8px;
+            padding: 8px 12px;
             text-align: center;
             box-shadow: var(--shadow);
-            border-left: 4px solid var(--accent);
+            border-left: 3px solid var(--accent);
+            min-width: 70px;
+            flex: 0 0 auto;
         }
         
         .stat-card.correct { border-left-color: var(--correct); }
         .stat-card.wrong { border-left-color: var(--wrong); }
         
         .stat-value {
-            font-size: 1.6rem;
-            font-weight: 800;
+            font-size: 1.1rem;
+            font-weight: 700;
             color: var(--accent);
+            line-height: 1;
         }
         
         .stat-card.correct .stat-value { color: var(--correct); }
         .stat-card.wrong .stat-value { color: var(--wrong); }
         
         .stat-label {
-            font-size: 0.8rem;
+            font-size: 0.65rem;
             color: var(--text-muted);
-            margin-top: 4px;
+            margin-top: 2px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
         }
         /* Filters */
         .filters-container {
