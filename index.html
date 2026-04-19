@@ -121,9 +121,17 @@
             box-shadow: 0 1px 6px rgba(0,0,0,.08);
         }
         
+        /* Stats wrapper - center in header */
+        .stats-wrapper {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+        
         /* Stats bar in header - compact */
         .stats-bar {
             display: flex;
+            justify-content: center;
             gap: 6px;
             flex-wrap: nowrap;
         }
@@ -513,18 +521,20 @@
                     <p>Procvičování otázek na pilotní průkaz</p>
                 </div>
             </div>
-            <div class="stats-bar" id="stats">
-                <div class="stat-card" onclick="resetQuiz()" title="Klikni pro reset">
-                    <div class="stat-value" id="total-count">0</div>
-                    <div class="stat-label">Celkem</div>
-                </div>
-                <div class="stat-card correct" onclick="resetQuiz()" title="Klikni pro reset">
-                    <div class="stat-value" id="correct-count">0</div>
-                    <div class="stat-label">Správně</div>
-                </div>
-                <div class="stat-card wrong" onclick="resetQuiz()" title="Klikni pro reset">
-                    <div class="stat-value" id="wrong-count">0</div>
-                    <div class="stat-label">Špatně</div>
+            <div class="stats-wrapper">
+                <div class="stats-bar" id="stats">
+                    <div class="stat-card" onclick="resetQuiz()" title="Klikni pro reset">
+                        <div class="stat-value" id="total-count">0</div>
+                        <div class="stat-label">Celkem</div>
+                    </div>
+                    <div class="stat-card correct" onclick="resetQuiz()" title="Klikni pro reset">
+                        <div class="stat-value" id="correct-count">0</div>
+                        <div class="stat-label">Správně</div>
+                    </div>
+                    <div class="stat-card wrong" onclick="resetQuiz()" title="Klikni pro reset">
+                        <div class="stat-value" id="wrong-count">0</div>
+                        <div class="stat-label">Špatně</div>
+                    </div>
                 </div>
             </div>
         </div>
