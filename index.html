@@ -64,28 +64,6 @@
             flex-wrap: wrap;
         }
         
-        .header-right {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .btn-reset-header {
-            padding: 8px 10px;
-            border: 1px solid rgba(231, 76, 60, 0.4);
-            background: rgba(231, 76, 60, 0.15);
-            color: var(--wrong);
-            border-radius: 6px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.15s;
-            white-space: nowrap;
-        }
-        
-        .btn-reset-header:hover {
-            background: var(--wrong);
-            color: white;
-        }
         
         .logo {
             display: flex;
@@ -159,6 +137,12 @@
             border-left: 2px solid rgba(255,255,255,0.3);
             min-width: 55px;
             flex: 0 0 auto;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        
+        .stat-card:hover {
+            background: rgba(255,255,255,0.2);
         }
         
         .stat-card.correct { border-left-color: var(--correct); }
@@ -529,22 +513,19 @@
                     <p>Procvičování otázek na pilotní průkaz</p>
                 </div>
             </div>
-            <div class="header-right">
-                <div class="stats-bar" id="stats">
-                    <div class="stat-card">
-                        <div class="stat-value" id="total-count">0</div>
-                        <div class="stat-label">Celkem</div>
-                    </div>
-                    <div class="stat-card correct">
-                        <div class="stat-value" id="correct-count">0</div>
-                        <div class="stat-label">Správně</div>
-                    </div>
-                    <div class="stat-card wrong">
-                        <div class="stat-value" id="wrong-count">0</div>
-                        <div class="stat-label">Špatně</div>
-                    </div>
+            <div class="stats-bar" id="stats">
+                <div class="stat-card" onclick="resetQuiz()" title="Klikni pro reset">
+                    <div class="stat-value" id="total-count">0</div>
+                    <div class="stat-label">Celkem</div>
                 </div>
-                <button class="btn-reset-header" onclick="resetQuiz()" title="Vymazat postup a začít znovu">🗑️</button>
+                <div class="stat-card correct" onclick="resetQuiz()" title="Klikni pro reset">
+                    <div class="stat-value" id="correct-count">0</div>
+                    <div class="stat-label">Správně</div>
+                </div>
+                <div class="stat-card wrong" onclick="resetQuiz()" title="Klikni pro reset">
+                    <div class="stat-value" id="wrong-count">0</div>
+                    <div class="stat-label">Špatně</div>
+                </div>
             </div>
         </div>
     </header>
@@ -563,7 +544,7 @@
     
     <footer>
         <div class="copy-hint">💡 Označ text myší pro kopírování</div>
-        <div>AeroPilot SPL Prep &copy; 2026 • Splň standardy EASA • Česká republika</div>
+        <div>AeroPilot SPL Prep &copy; 2026 • Splň standardy Aeroklubu • Česká republika</div>
     </footer>
 
     <script>
