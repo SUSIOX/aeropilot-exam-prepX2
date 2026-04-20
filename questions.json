@@ -3663,26 +3663,6 @@
   },
   {
     "category": "Všeobecné znalosti letadel SPL",
-    "question": "„Sekundární“ konstrukce letadla zahrnuje",
-    "options": [
-      {
-        "label": "a",
-        "text": "součásti, jejichž poruchy letadlo po pevnostní stránce vážně ohrozí",
-        "correct": false
-      },
-      {
-        "label": "b",
-        "text": "součásti, jejichž poruchy letadlo po pevnostní stránce vážně neohrozí W",
-        "correct": true
-      }
-    ],
-    "correct_labels": [
-      "b"
-    ],
-    "correct_answer": "součásti, jejichž poruchy letadlo po pevnostní stránce vážně neohrozí."
-  },
-  {
-    "category": "Všeobecné znalosti letadel SPL",
     "question": "Podle principu letu se rozdělují letadla na",
     "options": [
       {
@@ -4015,26 +3995,6 @@
       "b"
     ],
     "correct_answer": "rovný přímý let konstantní rychlostí."
-  },
-  {
-    "category": "Meteorologie SPL",
-    "question": "Který z uvedených dějů je nejvýznamnější pro tvoření srážek?",
-    "options": [
-      {
-        "label": "a",
-        "text": "vyzařování",
-        "correct": false
-      },
-      {
-        "label": "b",
-        "text": "mísení dvou různě teplých vzduchových hmot X",
-        "correct": true
-      }
-    ],
-    "correct_labels": [
-      "b"
-    ],
-    "correct_answer": "adiabatický výstup vzduchu."
   },
   {
     "category": "Navigace SPL",
