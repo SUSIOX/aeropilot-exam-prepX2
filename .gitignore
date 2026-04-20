@@ -1,0 +1,8 @@
+# Backup files
+*_backup_*.json
+karl_questions.json
+kristian_questions.json
+questions_backup*.json
+
+# System files
+.DS_Store
