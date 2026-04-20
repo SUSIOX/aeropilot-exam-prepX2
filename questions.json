@@ -4419,7 +4419,7 @@
       {
         "label": "a",
         "text": "proti směru pohybu hodinových ručiček",
-        "correct": false
+        "correct": true
       },
       {
         "label": "b",
@@ -4432,7 +4432,7 @@
         "correct": false
       }
     ],
-    "correct_labels": [],
+    "correct_labels": ["a"],
     "correct_answer": "proti směru pohybu hodinových ručiček."
   },
   {
@@ -4527,10 +4527,10 @@
       {
         "label": "c",
         "text": "určuje magnetka kompasu na který nepůsobí žádné vedlejší rušivé vlivy",
-        "correct": false
+        "correct": true
       }
     ],
-    "correct_labels": [],
+    "correct_labels": ["c"],
     "correct_answer": "určuje magnetka kompasu na který nepůsobí žádné vedlejší rušivé vlivy."
   },
   {
@@ -4595,7 +4595,7 @@
       {
         "label": "b",
         "text": "musí správně fungovat všechny části nezbytné pro bezpečný provoz letadla ve vzduchu i na zemi",
-        "correct": false
+        "correct": true
       },
       {
         "label": "c",
@@ -4603,7 +4603,7 @@
         "correct": false
       }
     ],
-    "correct_labels": [],
+    "correct_labels": ["b"],
     "correct_answer": "musí správně fungovat všechny části nezbytné pro bezpečný provoz letadla ve vzduchu i na zemi."
   }
 ]
