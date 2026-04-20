@@ -1,0 +1,2643 @@
+[
+  {
+    "category": "Základy letu SPL",
+    "question": "Dynamický tlak je závislý na rychlosti letu. Zvětší-li se rychlost letu dvakrát, pak dynamický tlak se",
+    "options": [
+      {
+        "label": "a",
+        "text": "dvakrát zmenší",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "čtyřikrát zvětší",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "dvakrát zvětší",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "čtyřikrát zvětší."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Jestliže letadlo letí ve výšce, ve které je tlak vzduchu roven tlaku podle MSA pro  tuto výšku, ale teplota je výrazně vyšší, než odpovídá průběhu MSA, pak¨",
+    "options": [
+      {
+        "label": "a",
+        "text": "hustota vzduchu je menší, než odpovídá MSA pro tuto výšku",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "hustota vzduchu je větší, než odpovídá MSA pro tuto výšku",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "hustota vzduchu má hodnotu odpovídající MSA pro tuto výšku, neboť teplot ji neovlivní",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "hustota vzduchu je menší, než odpovídá MSA pro tuto výšku."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Záporný součinitel vztlaku (a tím i vztlak kluzáku) může být pouze jen",
+    "options": [
+      {
+        "label": "a",
+        "text": "při záporném úhlu náběhu",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "při úhlu náběhu větším, než je “kritický”",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "při kladném úhlu náběhu",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "při záporném úhlu náběhu."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Velikost násobku při průletu poryvem se zvětšuje, když kluzák",
+    "options": [
+      {
+        "label": "a",
+        "text": "letí větší rychlostí, má větší letovou hmotnost a poryv je silný",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "letí větší rychlostí, má větší letovou hmotnost poryv je slabý",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "letí větší rychlostí, má menší letovou hmotnost a poryv je silný",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "letí větší rychlostí, má menší letovou hmotnost a poryv je silný."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Při klouzavém letu je úhel náběhu",
+    "options": [
+      {
+        "label": "a",
+        "text": "menší než ve střemhlavém letu",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "menší než při letu minimální rychlostí",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "roven nule, neboť let probíhá téměř v horizontální rovině",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "menší než při letu minimální rychlostí."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Čím je způsobeno značné snížení indukovaného odporu za letu a jaké jsou jeho¨projevy?",
+    "options": [
+      {
+        "label": "a",
+        "text": "ke snížení induk. odporu dojde za letu v těsné blízkosti země, kdy malá vzdálenost křídla od země omezí vznik koncových vírů. Zmenší se tak klesání v kroužení",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "ke snížení induk. odporu dojde za letu ve velké výšce, kdy se vlivem malé hustoty vzduchu nevytvoří dostatečně velký tlakový spád pro vznik koncových vírů. Výrazně se tak zvýší klouzavost",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "ke snížení induk. odporu dojde za letu v těsné blízkosti země, kdy malá vzdálenost křídla od země zabrání vytvoření koncových víru. Výrazně se tak zvýší klouzavost",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "ke snížení induk. odporu dojde za letu v těsné blízkosti země, kdy malá vzdálenost křídla od země zabrání vytvoření koncových víru. Výrazně se tak zvýší klouzavost."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Jaké geometrické charakteristiky profilu jsou označeny na obrázku?",
+    "options": [
+      {
+        "label": "a",
+        "text": "X - délka\t\tY – tloušťka",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "X - hloubka\t\tY – tloušťka",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "X - tloušťka \t\tY - délka",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "X - hloubka\t\tY – tloušťka.",
+    "image": "ZL003.png"
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Vzduch proudí ustáleně trubicí kruhového proměnného průřezu nakreslenou  na  obrázku. V části II je ze všech tří částí trubice největší obr. ZL001",
+    "options": [
+      {
+        "label": "a",
+        "text": "statický tlak",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "rychlost proudu",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "průřez trubice",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "rychlost proudu.",
+    "image": "ZL001.png"
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Do jaké výšky lze počítat s “přízemní efektem” v blízkosti země?",
+    "options": [
+      {
+        "label": "a",
+        "text": "do výšky 1 m",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "do výšky 30 m",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "asi do výšky jako je polovina rozpětí křídla",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "asi do výšky jako je polovina rozpětí křídla."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Zkratka “IAS” uváděná např. v letové příručce znamená",
+    "options": [
+      {
+        "label": "a",
+        "text": "indikovanou rychlost letu, tj. rychlost letadla, kterou udává indikátor pitot-statické rychloměrné soustavy",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "označení Mezinárodní standardní atmosféry",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "označení “střední aerodynamické tětivy”",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "indikovanou rychlost letu, tj. rychlost letadla, kterou udává indikátor pitot-statické rychloměrné soustavy."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Podle Mezinárodní standardní atmosféry (MSA. hustota vzduchu s rostoucí výškou",
+    "options": [
+      {
+        "label": "a",
+        "text": "nejprve roste a potom prudce klesá",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "klesá v závislosti na tlaku a teplotě podle stavové rovnice pro suchý vzduch",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "roste",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "klesá v závislosti na tlaku a teplotě podle stavové rovnice pro suchý vzduch."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Když je těžiště kluzáku posunuto směrem dozadu za krajní zadní centráž, potom",
+    "options": [
+      {
+        "label": "a",
+        "text": "bude kluzák podélně stabilní",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "bude kluzák podélně nestabilní",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "bude kluzák velmi těžko ovladatelný, např. při vybrání střemhlavého letu nebo při vzletu",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "bude kluzák podélně nestabilní."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Je-li za letu centráž běžného sportovního letounu v povolených mezích, ale blízko maximální zadní hodnoty, bude letoun při letu v turbulenci:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Podélná stabilita nezávisí na centráži.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Poměrně málo stabilní.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Poměrně stabilní.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "Poměrně málo stabilní.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Zvýšení hmotnosti letadla má za následek:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Menší úhel stoupání po vzletu.",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "Větší úhel stoupání po vzletu.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Nemá na úhel stoupání vliv.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "Menší úhel stoupání po vzletu.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Odpovědnost za to, že při zahájení letu nebude překročena maximální povolená hmotnost letadla, má:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Výrobce letadla.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Velitel letadla.",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "Vlastník letadla, případně nájemce letadla.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "Velitel letadla.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Použitelná délka vzletu se označuje zkratkou:",
+    "options": [
+      {
+        "label": "a",
+        "text": "TODA (take-off distance available).",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "LDA (landing distance available).",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "TORA (take-off run available).",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "TODA (take-off distance available).."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Střední aerodynamická tětiva:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Je vzdálenost od přídě letounu k těžišti letounu.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Je vzdálenost mezi těžištěm letounu a neutrálním bodem letounu.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Odpovídá hloubce obdélníkového křídla.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "Odpovídá hloubce obdélníkového křídla.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Zvýšení hmotnosti  letadla má za následek:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Prodloužení délky rozjezdu při vzletu.",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "Zkrácení délky rozjezdu při vzletu.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Nemá vliv na délku rozjezdu při vzletu.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "Prodloužení délky rozjezdu při vzletu.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Jaká je správná rychlost při nadzdvihnutí letadla při vzletu?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Přibližně o 10 až 15% větší než minimální rychlost.",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "Přibližně o 2 až 3% větší než minimální rychlost.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Stejně velká jako rychlost, kdy je dosaženo maximální klouzavosti.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "Přibližně o 10 až 15% větší než minimální rychlost.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Kdyby za letu letounu byla poloha těžiště za zadní povolenou mezí, bylo by nebezpečí, že:",
+    "options": [
+      {
+        "label": "a",
+        "text": "letoun bude podélně nestabilní, t.j. bude samovolně měnit úhel náběhu.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Maximální výchylky všech řídících ploch nebudou stačit pro některé režimy letu, např. pro vybírání ostrých zatáček.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Maximální výchylka výškového kormidla nebude stačit pro některé režimy letu, např. pro přechodový oblouk při přistání.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "letoun bude podélně nestabilní, t.j. bude samovolně měnit úhel náběhu.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Centráž letadla se obvykle udává:",
+    "options": [
+      {
+        "label": "a",
+        "text": "V procentech statické zásoby.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "V procentech střední aerodynamické tětivy.",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "V procentech zatížení podvozkových kol, stojí-li letadlo na zemi.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "V procentech střední aerodynamické tětivy.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Hmotnost letadla musí být vždy uvedena v:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Provozní příručce.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Letové příručce.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Potvrzení o údržbě.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "Letové příručce.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Proč se při stanovování výkonů letadel při vzletu zavádí pojem hustotní výška?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Umožňuje vzít v úvahu současně změny teploty i tlaku vzduchu i nadmořskou výšku letiště.",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "Umožňuje vzít v úvahu změny teploty i tlaku vzduchu.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Umožňuje vzít v úvahu změny teploty vzduchu.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "Umožňuje vzít v úvahu současně změny teploty i tlaku vzduchu i nadmořskou výšku letiště.."
+  },
+  {
+    "category": "Letecké výkony a plánování SPL",
+    "question": "Statický moment je součin:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Hmotnosti a ramene na druhou.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Hmotnosti na druhou a ramene na druhou.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Hmotnosti a ramene.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "Hmotnosti a ramene.."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Za jakých okolností je pravděpodobnější přijmutí vyššího rizika?",
+    "options": [
+      {
+        "label": "a",
+        "text": "kvůli skupinově-dynamickému efektu",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "při plánování letu, je-li předpovídáno výborné počasí",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "při zkušebních letech kvůli vyšší hladině nervozity",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "není-li k dispozici dostatek informací",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "kvůli skupinově-dynamickému efektu."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Co může vést k chybám lidského faktoru?",
+    "options": [
+      {
+        "label": "a",
+        "text": "dvojitá kontrola příslušné činnosti",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "správné používání seznamu úkonů",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "pochybnosti, když se něco zdá nejasné nebo dvojsmyslné",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "sklon vidět to, co lze předpokládat",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "correct_answer": "sklon vidět to, co lze předpokládat."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Kolik procent kyslíku je v atmosféře v 6000 ft?",
+    "options": [
+      {
+        "label": "a",
+        "text": "21 %",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "78 %",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "18.9 %",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "12 %",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "21 %."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Vzduch se skládá z kyslíku, dusíku a ostatních plynů. Jaké je přibližně percentuální složení těch ostatních plynů?",
+    "options": [
+      {
+        "label": "a",
+        "text": "1 %",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "78 %",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "21 %",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "0.1 %",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "1 %."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Rizikovým faktorem pro nemoc z dekomprese je?",
+    "options": [
+      {
+        "label": "a",
+        "text": "sportování",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "přístrojové potápění před letem",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "kouření",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "100 % kyslík po dekompresi",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "přístrojové potápění před letem."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Co je to chyba paralaxy?",
+    "options": [
+      {
+        "label": "a",
+        "text": "chybné čtení přístrojů způsobené úhlem pohledu",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "chyba v porozumění při komunikaci mezi piloty",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "dlouhozrakost způsobená stářím, zvláště v noci",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "nevnímání rychlosti při pojíždění",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "chybné čtení přístrojů způsobené úhlem pohledu."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Nepřetržitý proces sledování současné situace za letu se nazývá?",
+    "options": [
+      {
+        "label": "a",
+        "text": "okamžité sledování letu",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "situační povědomí",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "situační přemýšlení",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "postup předběžné kontroly",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "situační povědomí."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Otrava kysličníkem uhelnatým může být způsobena?",
+    "options": [
+      {
+        "label": "a",
+        "text": "alkoholem",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "nezdravou výživou",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "kouřením",
+        "correct": true
+      },
+      {
+        "label": "d",
+        "text": "nedostatkem spánku",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "kouřením."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Jaký optický klam může být způsoben přiblížením na dráhu se sklonem do kopce?",
+    "options": [
+      {
+        "label": "a",
+        "text": "pilot mí pocit, že přiblížení je příliš rychlé, a proto se k dráze přibližuje nižší než normální přibližovací rychlostí",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "pilot má pocit, že přiblížení je příliš vysoké, a proto se k dráze přibližuje níže než pod správným úhlem sestupu",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "pilot má pocit, že přiblížení je příliš nízké, a proto se k dráze přibližuje nad správným úhlem sestupu",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "pilot má pocit, že přiblížení je příliš pomalé, a proto se k dráze přibližuje vyšší než normální přibližovací rychlostí",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "pilot má pocit, že přiblížení je příliš vysoké, a proto se k dráze přibližuje níže než pod správným úhlem sestupu."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Co z následujícího NENÍ rizikovým faktorem pro nástup výškové nemoci?",
+    "options": [
+      {
+        "label": "a",
+        "text": "darování krve",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "potápění",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "menstruace",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "kouření",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "potápění."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Jaké nebezpečné přístupy jsou často kombinovány?",
+    "options": [
+      {
+        "label": "a",
+        "text": "sebeuvolnění a předvádění se",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "předvádění se a nezranitelnost",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "impulzivita a bezstarostnost",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "nezranitelnost a sebeuvolnění",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "předvádění se a nezranitelnost."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Zpomalení během rovného horizontálního letu může vést k pocitu?",
+    "options": [
+      {
+        "label": "a",
+        "text": "klesání",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "náklonu",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "letu na zádech",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "stoupání",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "klesání."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "S ohledem na komunikační model, jak lze zajistit použití stejného kódu při radiokomunikaci?",
+    "options": [
+      {
+        "label": "a",
+        "text": "použitím správné náhlavní soupravy",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "přidělením zvláštní frekvence",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "použitím radiostanic certifikovaných pro letectví",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "použitím radiotelefonní frazeologie",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "correct_answer": "použitím radiotelefonní frazeologie."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Srovnání náklonu po delší době zatáčení může vést k pocitu?",
+    "options": [
+      {
+        "label": "a",
+        "text": "ustáleného zatáčení stále ve stejném směru",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "zahájení klesání",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "zahájení stoupání",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "zatáčení do opačného směru",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "correct_answer": "zatáčení do opačného směru."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Co z následujícího je odpovědné za srážlivost krve?",
+    "options": [
+      {
+        "label": "a",
+        "text": "cévní kapiláry",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "bílé krvinky",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "červené krvinky",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "krevní destičky",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "correct_answer": "krevní destičky."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Jaká je nejlepší kombinace povahových rysů s ohledem na individuální přístup a chování pilota?",
+    "options": [
+      {
+        "label": "a",
+        "text": "introvertní – stabilní",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "extrovertní – nestabilní",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "introvertní – nestabilní",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "extrovertní – stabilní",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "correct_answer": "extrovertní – stabilní."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Co z následujícího NEZPŮSOBÍ ztrátu orientace?",
+    "options": [
+      {
+        "label": "a",
+        "text": "let pod vlivem alkoholu",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "turbulence v horizontálním letu",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "rovný přímý let konstantní rychlostí",
+        "correct": true
+      },
+      {
+        "label": "d",
+        "text": "pohyby hlavou při zatáčení",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "rovný přímý let konstantní rychlostí."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Jaká je funkce bílých krvinek?",
+    "options": [
+      {
+        "label": "a",
+        "text": "srážlivost krve",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "regulace cukru v krvi",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "přenos kyslíku",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "imunitní obrana",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "correct_answer": "imunitní obrana."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Kolik procent dusíku je v atmosféře?",
+    "options": [
+      {
+        "label": "a",
+        "text": "1 %",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "78 %",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "0.1 %",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "21 %",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "78 %."
+  },
+  {
+    "category": "Lidská výkonnost a omezení SPL",
+    "question": "Zrychlení během rovného horizontálního letu může vést k pocitu?",
+    "options": [
+      {
+        "label": "a",
+        "text": "náklonu",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "klesání",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "letu na zádech",
+        "correct": false
+      },
+      {
+        "label": "d",
+        "text": "stoupání",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "correct_answer": "stoupání."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Který z uvedených dějů je nejvýznamnější pro tvoření srážek",
+    "options": [
+      {
+        "label": "a",
+        "text": "vyzařování",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "mísení dvou různě teplých vzduchových hmot",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "adiabatický výstup vzduchu",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "adiabatický výstup vzduchu."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Jaká je průměrná výška standardní isobarické hladiny 850 HPa",
+    "options": [
+      {
+        "label": "a",
+        "text": "1500 m",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "1200 m",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "2000 m",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "1500 m."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Intenzitou námrazy rozumíme",
+    "options": [
+      {
+        "label": "a",
+        "text": "tloušťku vrstvy ledu v mm vytvořenou za 1 minutu",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "tloušťku vrstvy ledu v násobkách mm vytvořenou za 1 minutu",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "tloušťku vrstvy ledu v desetinách mm vytvořenou za 10 sekund",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "tloušťku vrstvy ledu v mm vytvořenou za 1 minutu."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Zdrojem atmosférické vlhkosti je",
+    "options": [
+      {
+        "label": "a",
+        "text": "troposféra",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "stratosféra",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "zemský povrch",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "zemský povrch."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Prostorové rozložení standardní isobarické hladiny získáme rozborem (analýzou) této hladiny pomocí čar, které nazýváme",
+    "options": [
+      {
+        "label": "a",
+        "text": "isotermy",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "isohypsy",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "isobary",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "isohypsy."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Ve stratosféře převládá proudění vzduchu",
+    "options": [
+      {
+        "label": "a",
+        "text": "je nulové (klid)",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "turbulentní",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "ve směru horizontálním",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "ve směru horizontálním."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Inverzní situace jsou charakteristické pro",
+    "options": [
+      {
+        "label": "a",
+        "text": "přízemní vrstvu troposféry",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "horní vrstvy troposféry",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "stratosféru",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "přízemní vrstvu troposféry."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "V oblasti tlakové níže vane vítr při zemi",
+    "options": [
+      {
+        "label": "a",
+        "text": "proti směru pohybu hodinových ručiček",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "ve směru pohybu hodinových ručiček",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "směr větru nesouvisí se směrem pohybu hodinových ručiček",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "proti směru pohybu hodinových ručiček."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Mezi vysoká oblaka patří",
+    "options": [
+      {
+        "label": "a",
+        "text": "Cu - cumulus, Ac – altocumulus",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Cc - cirrocumulus, Cs – cirrostratus",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "St - stratus, Sc - stratocumulus",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "Cc - cirrocumulus, Cs – cirrostratus."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Změna teploty s výškou - vertikální teplotní gradient ve vrstvě isotermie má hodnotu",
+    "options": [
+      {
+        "label": "a",
+        "text": "kladnou",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "zápornou",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "nulovou",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "nulovou."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Oblačnost středních výšek tvoří",
+    "options": [
+      {
+        "label": "a",
+        "text": "Ac - altocumulus, As – altostratus",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "Cu - cumulus, Sc - stratocumulus",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Ci - cirrus, Cc – cirrocumulus",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "Ac - altocumulus, As – altostratus."
+  },
+  {
+    "category": "Meteorologie SPL",
+    "question": "Inverzí rozumíme",
+    "options": [
+      {
+        "label": "a",
+        "text": "teplota se s výškou nemění",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "pokles teploty s výškou",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "vzrůst teploty s výškou",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "vzrůst teploty s výškou."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Řešíte úlohu: Km = 312°, PVR = 100 km/h, V/v = 135°/5 m/sec",
+    "options": [
+      {
+        "label": "a",
+        "text": "TR = 100 km/h, US = 2°L",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "TR = 118 km/h, US = 1°P",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "TR = 130 km/h, US = 3°L",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "TR = 118 km/h, US = 1°P."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Dříve než v Praze vychází slunce",
+    "options": [
+      {
+        "label": "a",
+        "text": "v Moskvě",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "v Paříži",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "v Londýně",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "v Moskvě."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Sever magnetický je směr, který",
+    "options": [
+      {
+        "label": "a",
+        "text": "je určený myšlenou přímkou, která vede středem země a protíná její povrch v bodech, které nazýváme sever magnetický a jih magnetický",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "změříme na mapě",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "určuje magnetka kompasu na který nepůsobí žádné vedlejší rušivé vlivy",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "určuje magnetka kompasu na který nepůsobí žádné vedlejší rušivé vlivy."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Osa zemská je myšlená přímka středem země kolmá na rovník. Místa, kde protíná povrch země, se nazývají póly (točny). Jsou to póly",
+    "options": [
+      {
+        "label": "a",
+        "text": "magnetické",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "zeměpisné",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "totožné",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "zeměpisné."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Poloha zeměpisného a magnetické pólu je",
+    "options": [
+      {
+        "label": "a",
+        "text": "totožná",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "není shodná",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "magnetický pól je vždy na východ od zeměpisného",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "není shodná."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "225 stupňů je vedlejší světová strana",
+    "options": [
+      {
+        "label": "a",
+        "text": "severozápad",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "jihovýchod",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "jihozápad",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "jihozápad."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Izogona je",
+    "options": [
+      {
+        "label": "a",
+        "text": "čára spojující místa se stejnou deklinací",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "čára spojující magnetický a zeměpisný pól",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "přímka, na které leží stejné agony",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "čára spojující místa se stejnou deklinací."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Řešíte úlohu: Vp = 100 km/h, výška letu 1600 m, t = +15° C",
+    "options": [
+      {
+        "label": "a",
+        "text": "PVR = 110 km/h",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "PVR = 90 km/h",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "PVR = 100 km/h",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "PVR = 110 km/h."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Zeměpisný poledník je",
+    "options": [
+      {
+        "label": "a",
+        "text": "polovinou poledníkové kružnice",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "část kružnice, jejíž rovina je kolmá na zemskou osu",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "kružnice kolem zeměkoule",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "polovinou poledníkové kružnice."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Zeměpisné souřadnice nám udávají",
+    "options": [
+      {
+        "label": "a",
+        "text": "zeměpisnou polohu určitého místa",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "polohu časového pásma",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "název určitého místa",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "zeměpisnou polohu určitého místa."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "Zápis d = -3 znamená, že kompasový sever je",
+    "options": [
+      {
+        "label": "a",
+        "text": "západně od severu magnetického",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "východně od severu magnetického",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "západně od severu zeměpisného",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "západně od severu magnetického."
+  },
+  {
+    "category": "Navigace SPL",
+    "question": "045 stupňů je vedlejší světová strana",
+    "options": [
+      {
+        "label": "a",
+        "text": "jihozápad",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "severovýchod",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "severozápad",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "severovýchod."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Hladina dodržovaná letadlem během značné části letu se nazývá :",
+    "options": [
+      {
+        "label": "a",
+        "text": "cestovní hladina",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "hladina",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "standardní hladina",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "cestovní hladina."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Jaké je správné umístění polohových světel na letounu?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Ocas - zelené, levé křídlo - bílé, pravé křídlo - červené.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Ocas - červené, levé křídlo - bílé, pravé křídlo - zelené.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Ocas - bílé, levé křídlo - červené, pravé křídlo - zelené.",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "Ocas - bílé, levé křídlo - červené, pravé křídlo - zelené.."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Má-li být kvalifikace SPL nebo TMG využívána pro lety s dalšími osobami na palubě musí mít pilot",
+    "options": [
+      {
+        "label": "a",
+        "text": "Nejméně 25 hodin v příslušné kategorii a 15 hodin samostatné doby na typu..",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Celkový nálet 25 hodin na TMG a SPL a celkem 5 hodin na použitém typu..",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Nejméně 25 hodin samostatné letové doby v příslušné kategorii a 5 hodin samostatné doby na použitém typu..",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "Nejméně 25 hodin samostatné letové doby v příslušné kategorii a 5 hodin samostatné doby na použitém typu..."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Let VFR nad oblačností může být proveden není-li celkové pokrytí oblačnosti pod letadlem",
+    "options": [
+      {
+        "label": "a",
+        "text": "větší než 5/8 a je možno jej provádět podle srovnávací navigace",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "takové, aby bránilo srovnávací navigaci",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "větší než 4/8 a je možno jej provádět podle srovnávací navigace",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "větší než 4/8 a je možno jej provádět podle srovnávací navigace."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Pilot kluzáků /motorových kluzáků/",
+    "options": [
+      {
+        "label": "a",
+        "text": "Nemusí pro jednotlivé typy kluzáků/motorových  kluzáků/ provést rozdílový výcvik.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Musí pro jednotlivé typy kluzáků/motorových kluzáků/ provést rozdílový výcvik.",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "Provádí rozdílový výcvik v rozsahu rozhodnutí pilota.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "Musí pro jednotlivé typy kluzáků/motorových kluzáků/ provést rozdílový výcvik.."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Za záznamy o provedených letech a závadách zjištěných za letu letadla provozovaného při soukromých letech odpovídá:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Velitel letadla.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Vlastník, případně nájemce letadla.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Uživatel letadla.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "Velitel letadla.."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Průkaz pilota kluzáků SPL Part-SFCL vydává ÚCL s platností :",
+    "options": [
+      {
+        "label": "a",
+        "text": "Bez dobového omezení.",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "Do konce kalendářního roku + 5 let.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Na stejnou dobu jako je platná kvalifikace GLD/TMG/.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "Bez dobového omezení.."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Provozním předpisem platným v současné době v ČR pro soukromé lety letadel je:",
+    "options": [
+      {
+        "label": "a",
+        "text": "L 6 / II.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "L 6 / I.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "JAR-OPS 2.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "L 6 / II.."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Odpovědnost za údržbu letadla má:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Velitel letadla.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "Vlastník, případně nájemce letadla.",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "Uživatel letadla.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "Vlastník, případně nájemce letadla.."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "eškerý provoz na provozní ploše letiště a všechna letadla letící v blízkosti letiště nazýváme :",
+    "options": [
+      {
+        "label": "a",
+        "text": "letový provoz",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "letištní provoz",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "smíšený provoz",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "letištní provoz."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Pokud pilot závažným způsobem poruší v ČR letecké předpisy:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Úřad pro civilní letectví s ním může vést správní řízení.",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "Zástupce provozovatele letiště mu může na místě udělit blokovou pokutu.",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "Inspektor ÚCL mu může na místě udělit blokovou pokutu.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "Úřad pro civilní letectví s ním může vést správní řízení.."
+  },
+  {
+    "category": "Provozní postupy SPL",
+    "question": "Tísňová frekvence pro letadlové radiostanice VKV je:",
+    "options": [
+      {
+        "label": "a",
+        "text": "122.5 MHz.",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "121.5 MHz.",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "120.5 MHz.",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "121.5 MHz.."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Tabulka východů a západů slunce je uvedena v AIP části",
+    "options": [
+      {
+        "label": "a",
+        "text": "ENR",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "AD",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "GEN",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "GEN."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Ve třídě E vzdušného prostoru nad 900 m AMSL nebo 300 m nad terénem je minimální vzdálenost od oblaků horizontálně :",
+    "options": [
+      {
+        "label": "a",
+        "text": "800 m",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "1000 m",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "1500 m",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "1500 m."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Ověřovat, zda je osvědčení o letové způsobilosti platné je povinností",
+    "options": [
+      {
+        "label": "a",
+        "text": "provozovatele",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "vedoucího letového provozu",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "velitele letadla",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "velitele letadla."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "S výjimkou kdy je to nezbytné pro vzlet nebo přistání nebo pokud to povolí příslušný úřad, let VFR nesmí být prováděn nad hustě zastavěnými místy nebo nad shromážděními osob na volném prostranství ve výšce nižší než  :",
+    "options": [
+      {
+        "label": "a",
+        "text": "100 m nad nejvyšší překážkou v okruhu 600 m od letadla",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "300 m nad nejvyšší překážkou v okruhu 600 m od letadla",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "300 m nad nejvyšší překážkou v okruhu 500 m od letadla",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "300 m nad nejvyšší překážkou v okruhu 600 m od letadla."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Ukazatel směru větru na letišti musí být jasně viditelný a nezaměnitelný s pozadím z výšky nejméně :",
+    "options": [
+      {
+        "label": "a",
+        "text": "500 m",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "200 m",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "300 m",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "300 m."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Hladina dodržovaná letadlem během značné části letu se nazývá :",
+    "options": [
+      {
+        "label": "a",
+        "text": "standardní hladina",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "hladina",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "cestovní hladina",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "cestovní hladina."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Průmět dráhy letadla na povrch země, jehož směr se v kterémkoli bodě obvykle vyjadřuje ve stupních měřených od severu se nazývá :",
+    "options": [
+      {
+        "label": "a",
+        "text": "trať",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "směr",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "kurz",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "trať."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Letištní provozní zóna (ATZ) je vymezena vertikálně zemským povrchem a nadmořskou výškou :",
+    "options": [
+      {
+        "label": "a",
+        "text": "5 000 ft",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "4 000 ft",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "3 000 ft",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "4 000 ft."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Pokud fyzická osoba vykonává činnost leteckého personálu bez platného průkazu způsobilosti může jí být uložena pokuta až do výše :",
+    "options": [
+      {
+        "label": "a",
+        "text": "50 000 Kč",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "100 000 Kč",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "150 000 Kč",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "100 000 Kč."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "čtyři oranžové obdélníkové plochy obr. pr001 sestavené do tvaru kříže s prázdným  čtvercem uprostřed znamenají že :",
+    "options": [
+      {
+        "label": "a",
+        "text": "letiště není schopné",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "v místě vytyčení je neschopná RWY",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "na letišti se provádějí výsadky",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "na letišti se provádějí výsadky.",
+    "image": "pr001.png"
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Vztažný bod letiště :",
+    "options": [
+      {
+        "label": "a",
+        "text": "je stanoven na letištích s řízeným provozem",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "musí být stanoven pro všechna veřejná letiště",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "musí být stanoven pro každé letiště",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "musí být stanoven pro každé letiště."
+  },
+  {
+    "category": "Předpisy SPL",
+    "question": "Smysl kroužení více kluzáků ve stoupavém proudu :",
+    "options": [
+      {
+        "label": "a",
+        "text": "určuje pilot kluzáku, který začal kroužit jako první",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "je určena podle nejvyššího kluzáku",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "se řídí kluzákem který stoupá nejrychleji",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "určuje pilot kluzáku, který začal kroužit jako první."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Dvounosníková konstrukce křídla je",
+    "options": [
+      {
+        "label": "a",
+        "text": "konstrukce s jedním hlavním a jedním pomocným nosníkem",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "konstrukce se dvěma hlavními nosníky",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "konstrukce se dvěma hlavními a jedním pomocným nosníkem",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "konstrukce se dvěma hlavními nosníky."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Násobek zatížení je",
+    "options": [
+      {
+        "label": "a",
+        "text": "poměr statického a dynamického zatížení na letadle",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "poměr specifikovaného zatížení k celkové tíze letadla. Udává, kolikrát je vztlak letadla v daném časovém okamžiku větší než jeho tíha",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "poměr vztlaku a odporu na letadle",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "poměr specifikovaného zatížení k celkové tíze letadla. Udává, kolikrát je vztlak letadla v daném časovém okamžiku větší než jeho tíha."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Pojem „letadlo“ je definován následovně",
+    "options": [
+      {
+        "label": "a",
+        "text": "jedná se o motorové letadlo schopné řízeného letu v atmosféře",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "zařízení, u něhož je vztlak potřebný k letu vyvozován aerostatickými silami obklopujícího ovzduší",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "zařízení schopné vyvozovat síly nesoucí jej v atmosféře z reakcí vzduchu, které nejsou reakcemi vůči zemskému povrchu",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "zařízení schopné vyvozovat síly nesoucí jej v atmosféře z reakcí vzduchu, které nejsou reakcemi vůči zemskému povrchu."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Typ letadla je",
+    "options": [
+      {
+        "label": "a",
+        "text": "letadlo charakterizované v typovém osvědčení: konstrukcí, výkony a vlastnostmi",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "letadlo charakterizované v typovém osvědčení: koncepcí, konstrukcí, výkony a vlastnostmi",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "letadlo charakterizované v typovém osvědčení: konstrukcí a výkony",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "letadlo charakterizované v typovém osvědčení: koncepcí, konstrukcí, výkony a vlastnostmi."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Hlavní podvozek letadla je",
+    "options": [
+      {
+        "label": "a",
+        "text": "podvozek zachycující převážnou část energie po zemi se pohybujícího letadla",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "základní konstrukční skupina přistávacího zařízení",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "podvozek zachycující veškerou energii pohybujícího se letadla",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "podvozek zachycující převážnou část energie po zemi se pohybujícího letadla."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Samonosné křídlo je",
+    "options": [
+      {
+        "label": "a",
+        "text": "křídlo podepřené k trupu vzpěrou",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "křídlo bez vnějšího vyztužení",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "křídlo s vnějším vyztužením",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "křídlo bez vnějšího vyztužení."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Hlavní charakteristiky nosných ploch letadla jsou",
+    "options": [
+      {
+        "label": "a",
+        "text": "poloha nosných ploch vůči trupu, půdorysný tvar, rozpětí, profily nosných ploch, velikost nosných ploch, štíhlost, zúžení, úhel šípu, úhel vzepětí, úhel seřízení, zkroucení",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "rozpětí, profily nosných ploch, velikost nosných ploch, štíhlost, zúžení",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "poloha nosných ploch vůči trupu, půdorysný tvar, rozpětí, profily nosných ploch, velikost nosných ploch, štíhlost, zúžení, úhel šípu, úhel vzepětí",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "poloha nosných ploch vůči trupu, půdorysný tvar, rozpětí, profily nosných ploch, velikost nosných ploch, štíhlost, zúžení, úhel šípu, úhel vzepětí, úhel seřízení, zkroucení."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Při předepsaném maximálním provozním zatížení (stanoveno v leteckých předpisech)",
+    "options": [
+      {
+        "label": "a",
+        "text": "nemusí správně fungovat všechny části nezbytné pro bezpečný provoz letadla ve vzduchu i na zemi",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "musí správně fungovat všechny části nezbytné pro bezpečný provoz letadla ve vzduchu i na zemi",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "musí správně fungovat všechny části pro bezpečný provoz letadla ve vzduchu",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "musí správně fungovat všechny části nezbytné pro bezpečný provoz letadla ve vzduchu i na zemi."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Skořepinová konstrukce trupu je",
+    "options": [
+      {
+        "label": "a",
+        "text": "konstrukce, jejíž krutová a ohybová pevnost a tuhost je zajišťována potahem",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "konstrukce, jejíž krutová a ohybová pevnost a tuhost je zajišťována přepážkami",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "konstrukce, jejíž krutová a ohybová pevnost a tuhost je zajišťována přehradami",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "konstrukce, jejíž krutová a ohybová pevnost a tuhost je zajišťována potahem."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Kolem příčné osy se letoun řídí",
+    "options": [
+      {
+        "label": "a",
+        "text": "směrovým kormidlem",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "křidélky",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "výškovým kormidlem",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "výškovým kormidlem."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "V letecké výrobě kluzáků a malých letadel se používají tyto druhy dřev(zušlechtěných)",
+    "options": [
+      {
+        "label": "a",
+        "text": "borovice, smrk, bříza, buk, olše, lípa, jasan, jilm",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "smrk, borovice, jasan, bříza",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "bříza, buk, jasan, jilm",
+        "correct": false
+      }
+    ],
+    "correct_labels": [],
+    "correct_answer": "borovice, smrk, bříza, buk, olše, lípa, jasan, jilm."
+  },
+  {
+    "category": "Všeobecné znalosti letadel SPL",
+    "question": "Podle umístění nosných ploch rozdělujeme letadla na",
+    "options": [
+      {
+        "label": "a",
+        "text": "jednoplošníky, středoplošníky a hornoplošníky",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "dolnoplošníky, středoplošníky, hornoplošníky",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "jednoplošníky a dvouplošníky",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "dolnoplošníky, středoplošníky, hornoplošníky."
+  }
+]

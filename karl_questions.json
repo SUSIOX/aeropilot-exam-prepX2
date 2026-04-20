@@ -1,0 +1,278 @@
+[
+  {
+    "category": "Základy letu SPL",
+    "question": "Součinitel vztlaku profilu je nejvíce ovlivněn",
+    "options": [
+      {
+        "label": "a",
+        "text": "zakřivením profilu",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "tloušťkou profilu",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "hloubkou profilu",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "zakřivením profilu."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Jak souvisí hodnota náklonu v zatáčce (ustálená správná zatáčka) s velikostí násobku?",
+    "options": [
+      {
+        "label": "a",
+        "text": "násobek roste s rostoucím náklonem zatáčky",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "násobek klesá s rostoucím náklonem zatáčky",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "náklon a násobek v zatáčce spolu nesouvisí, záleží výlučně na rychlosti letu",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "násobek roste s rostoucím náklonem zatáčky."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Čím je způsobeno značné snížení indukovaného odporu za letu a jaké jsou jeho projevy?",
+    "options": [
+      {
+        "label": "a",
+        "text": "ke snížení induk. odporu dojde za letu v těsné blízkosti země, kdy malá vzdálenost křídla od země omezí vznik koncových vírů. Zmenší se tak klesání v kroužení",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "ke snížení induk. odporu dojde za letu v těsné blízkosti země, kdy malá vzdálenost křídla od země zabrání vytvoření koncových víru. Výrazně se tak zvýší klouzavost",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "ke snížení induk. odporu dojde za letu ve velké výšce, kdy se vlivem malé hustoty vzduchu nevytvoří dostatečně velký tlakový spád pro vznik koncových vírů. Výrazně se tak zvýší klouzavost",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "ke snížení induk. odporu dojde za letu v těsné blízkosti země, kdy malá vzdálenost křídla od země zabrání vytvoření koncových víru. Výrazně se tak zvýší klouzavost."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Ve kterých letových režimech je velký součinitel indukovaného odporu?",
+    "options": [
+      {
+        "label": "a",
+        "text": "při malých úhlech náběhu, např. ve střemhlavém letu",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "při velkých úhlech náběhu, např. v kroužení a při letu malou rychlostí",
+        "correct": true
+      },
+      {
+        "label": "c",
+        "text": "při malých úhlech náběhu, např. v kroužení a při letu minimální rychlostí",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "correct_answer": "při velkých úhlech náběhu, např. v kroužení a při letu malou rychlostí."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Do jaké výšky lze počítat s \"přízemním efektem\" v blízkosti země?",
+    "options": [
+      {
+        "label": "a",
+        "text": "asi do výšky jako je polovina rozpětí křídla",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "dovýšky 1m",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "dovýšky 30m",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "asi do výšky jako je polovina rozpětí křídla."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Záporný součinitel vztlaku (a tím i vztlak kluzáku) může být pouze jen",
+    "options": [
+      {
+        "label": "a",
+        "text": "při kladném úhlu náběhu",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "při úhlu náběhu větším, než je \"kritický\"",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "při záporném úhlu náběhu",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "při záporném úhlu náběhu."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Na obrázku je nakreslena pitot-statická sonda. Jaký tlak je odebírán snímačem 1 a jaký snímačem 2?",
+    "image": "ZL002.png",
+    "options": [
+      {
+        "label": "a",
+        "text": "1- statický 2 — celkový",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "1- dynamický 2 - celkový",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "1- statický 2 - dynamický",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "1 - statický 2 — celkový."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Při klouzavém letu je úhel náběhu",
+    "options": [
+      {
+        "label": "a",
+        "text": "menší než při letu minimální rychlostí",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "roven nule, neboť let probíhá téměř v horizontální rovině",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "menší než ve střemhlavém letu",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "menší než při letu minimální rychlostí."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Dynamický tlak je závislý na rychlosti letu. Zvětší-li se rychlost letu dvakrát, pak dynamický tlak se",
+    "options": [
+      {
+        "label": "a",
+        "text": "dvakrát zmenší",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "dvakrát zvětší",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "čtyřikrát zvětší",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "čtyřikrát zvětší."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Podle Mezinárodní standardní atmosféry (MSA) hustota vzduchu s rostoucí výškou",
+    "options": [
+      {
+        "label": "a",
+        "text": "nejprve roste a potom prudce klesá",
+        "correct": false
+      },
+      {
+        "label": "b",
+        "text": "roste",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "klesá v závislosti na tlaku a teplotě podle stavové rovnice pro suchý vzduch",
+        "correct": true
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "correct_answer": "klesá v závislosti na tlaku a teplotě podle stavové rovnice pro suchý vzduch."
+  },
+  {
+    "category": "Základy letu SPL",
+    "question": "Kluzák o hmotnosti 500 kg letí klouzavým letem ustálenou rychlostí 110 km/h na úhlu náběhu 7 stupňů. Přejde-li tento kluzák do střemhlavého letu a při jeho vybrání dosáhne rychlosti 220 km/h na úhlu náběhu také 7 stupňů, pak vztlak",
+    "options": [
+      {
+        "label": "a",
+        "text": "vzrostl čtyřikrát a činí asi 20 000 N",
+        "correct": true
+      },
+      {
+        "label": "b",
+        "text": "vzrostl nepatrně, neboť při vybrání působí setrvačné síly",
+        "correct": false
+      },
+      {
+        "label": "c",
+        "text": "vzrostl dvakrát a činí asi 10000 N",
+        "correct": false
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "correct_answer": "vzrostl čtyřikrát a činí asi 20 000 N."
+  }
+]
