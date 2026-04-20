@@ -4058,12 +4058,12 @@
   },
   {
     "category": "Navigace SPL",
-    "question": "Vztažný bod leti",
+    "question": "Vztažný bod letiště musí být stanoven pro každé letiště v:",
     "options": [
       {
         "label": "a",
-        "text": "musí být stanoven pro každé letiště v",
-        "correct": false
+        "text": "letecké příručce",
+        "correct": true
       },
       {
         "label": "b",
@@ -4071,12 +4071,12 @@
         "correct": false
       },
       {
-        "label": "a",
+        "label": "c",
         "text": "velitele letadla",
-        "correct": true
+        "correct": false
       },
       {
-        "label": "b",
+        "label": "d",
         "text": "vedoucího letového provozu",
         "correct": false
       }
