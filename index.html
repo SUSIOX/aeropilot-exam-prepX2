@@ -535,6 +535,10 @@
                         <div class="stat-value" id="wrong-count">0</div>
                         <div class="stat-label">Špatně</div>
                     </div>
+                    <div class="stat-card" onclick="resetQuiz()" title="Klikni pro reset" style="border-left-color: #3498db;">
+                        <div class="stat-value" id="pct-count" style="color: #3498db;">0%</div>
+                        <div class="stat-label">Úspěšnost</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -568,9 +572,12 @@
 
         async function loadQuestions() {
             try {
-                const response = await fetch('questions.json');
-                if (!response.ok) throw new Error('Nepodařilo se načíst otázky');
-                allQuestions = await response.json();
+                const sources = ['questions.json', 'navigace_medlanky.json'];
+                const results = await Promise.all(sources.map(src => 
+                    fetch(src).then(r => r.ok ? r.json() : []).catch(() => [])
+                ));
+                allQuestions = results.flat();
+                if (allQuestions.length === 0) throw new Error('Nepodařilo se načíst otázky');
                 
                 // Try to load saved state
                 const saved = loadQuizState();
@@ -651,6 +658,11 @@
             if (totalEl) totalEl.textContent = currentQuestions.length;
             if (correctEl) correctEl.textContent = correctCount;
             if (wrongEl) wrongEl.textContent = wrongCount;
+            
+            const pctEl = document.getElementById('pct-count');
+            const totalAnswered = correctCount + wrongCount;
+            const pct = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+            if (pctEl) pctEl.textContent = pct + '%';
         }
 
         // Save/load quiz state
